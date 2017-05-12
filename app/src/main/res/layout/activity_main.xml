@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.anujsharma.colors.MainActivity">
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/xsvSurfaceView"/>
+
+    <TextView
+        android:id="@+id/xtvcoordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coordinates"
+        android:textColor="@android:color/white"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/xtvcolor" />
+
+    <TextView
+        android:id="@+id/xtvcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="Color:" />
+
+    <ImageView
+        android:id="@+id/xivColorImage"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/xtvcoordinates"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white" />
+
+</RelativeLayout>
